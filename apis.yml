@@ -1,7 +1,12 @@
 aid: american-water-works
-url: https://raw.githubusercontent.com/api-evangelist/american-water-works/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/american-water-works/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.american-water-works.com
+description: >-
+  American Water Works is the largest publicly traded U.S. water and wastewater utility
+  company, providing drinking water, wastewater, and other related services to customers
+  in multiple states.

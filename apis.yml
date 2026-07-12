@@ -20,6 +20,10 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.j
 access: 3rd-Party
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/american-water-works-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/american-water-works-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/American-Water
   - type: LinkedIn

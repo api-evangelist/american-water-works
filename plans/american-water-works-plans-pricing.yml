@@ -1,0 +1,17 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.amwater.com/
+plan_count: 0
+note: >-
+  American Water publishes no API plans, tiers, quotas or developer pricing of any kind,
+  because it publishes no API. What the company does publish is regulated retail water and
+  wastewater TARIFFS — per-state rate schedules filed with and approved by each state's public
+  utility commission (e.g. the New Jersey BPU, the Pennsylvania PUC, the California PUC). Those
+  are the price of water service to a household, not the price of programmatic access, and they
+  are not modelled here: recording a residential rate schedule as an API plan would misrepresent
+  both. plan_count is an honest zero.
+plans: []
+x-evidence:
+  - {url: 'https://www.amwater.com/openapi.json', status: 404}
+  - {url: 'https://www.amwater.com/api-docs', status: 404}
+  - {url: 'https://www.amwater.com/', status: 200, note: no developer or API pricing surface in navigation or sitemap}

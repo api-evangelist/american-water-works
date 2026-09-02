@@ -1,0 +1,37 @@
+generated: '2026-09-02'
+method: searched
+source: >-
+  registry.npmjs.org search, pypi.org/pypi/<name>/json, and the American Water GitHub
+  organization (https://github.com/American-Water)
+summary:
+  official_count: 0
+  third_party_count: 1
+  note: >-
+    American Water ships no first-party client library in any registry. The company's GitHub
+    organization (github.com/American-Water) exists and resolves, but publishes ZERO public
+    repositories, so there is no first-party source distribution either. The one package that
+    exists is an independent community CLI that scrapes the public alerts surface; it is not
+    an SDK for an American Water API, because no American Water API exists to wrap. No SDKs
+    pointer is emitted.
+packages:
+  - language: python
+    registry: pypi
+    name: amwater
+    url: https://pypi.org/project/amwater/
+    install: pip install amwater
+    official: false
+    version: 0.0.3
+    published: '2021-10-03'
+    source_code: https://github.com/samapriya/amwater
+    author: Samapriya Roy
+    description: >-
+      "Alert CLI for American water" — an independent third-party command-line tool by
+      Samapriya Roy. Not published, endorsed or maintained by American Water Works Company.
+    note: >-
+      Last release 2021-10-03, nearly five years stale at the time of this pass. Recorded for
+      completeness and explicitly marked official:false — counting it as a first-party SDK
+      would credit American Water with a client library it did not write.
+registries_probed:
+  - {registry: npm, query: amwater, result: no matching package}
+  - {registry: pypi, name: amwater, result: found (third-party), status: 200}
+  - {registry: github, org: American-Water, result: org exists, public_repos: 0}

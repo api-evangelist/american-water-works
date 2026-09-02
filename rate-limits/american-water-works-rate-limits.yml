@@ -1,0 +1,15 @@
+generated: '2026-09-02'
+method: searched
+source: https://www.amwater.com/
+limit_count: 0
+note: >-
+  No published rate limits, because there is no published API to limit. American Water exposes
+  no developer documentation, no API reference, and no machine-readable contract, so there are
+  no windows, quotas, burst allowances, X-RateLimit-*/RateLimit-* response headers or 429
+  semantics to record. An honest zero, not an unchecked field.
+limits: []
+headers: []
+x-evidence:
+  - {url: 'https://www.amwater.com/openapi.json', status: 404}
+  - {url: 'https://www.amwater.com/swagger.json', status: 404}
+  - {url: 'https://www.amwater.com/sitemap.xml', status: 200, note: 500 URLs, none a developer or API reference page}

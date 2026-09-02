@@ -1,0 +1,79 @@
+generated: '2026-09-02'
+method: searched
+source: live probes of the /.well-known/ named-path list on every American Water host in apis.yml
+note: >-
+  American Water publishes exactly one real /.well-known/ document — an RFC 9116 security.txt
+  on www.amwater.com carrying a single Contact: line. Its Expires: value (2024-06-01) is in the
+  past, so the document is served but stale by its own terms. The MyWater host
+  (login.amwater.com) is an Angular single-page app that answers HTTP 200 with the same 38,759-byte
+  HTML shell for EVERY /.well-known/ path, including a negative-control path that cannot exist —
+  none of its 200s are documents and none are counted.
+hosts:
+  - host: https://www.amwater.com
+    path_echo_control: passed
+    negative_control:
+      path: /.well-known/american-water-works-negative-control-7f3ab91c.json
+      status: 404
+    hit_count: 1
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: american-water-works-security.txt
+        note: 76 bytes, text/plain. Contact only; no Policy, Encryption, Preferred-Languages or Canonical. Expires 2024-06-01 (stale).
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/ucp.json
+        status: 404
+      - path: /.well-known/acp.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://login.amwater.com
+    path_echo_control: failed
+    soft_404_control:
+      path: /.well-known/american-water-works-negative-control-7f3ab91c.json
+      status: 200
+      bytes: 38759
+      content_type: text/html
+      note: >-
+        Identical byte count and body to the site root, so every 200 below is the SPA catch-all,
+        not a served document. No document is recorded and no pointer is emitted for this host.
+    hit_count: 0
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: null
+        note: SPA catch-all HTML — not a document.
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: null
+        note: SPA catch-all HTML — not a document.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        file: null
+        note: SPA catch-all HTML — not a document.
+      - path: /.well-known/agent-card.json
+        status: 200
+        file: null
+        note: SPA catch-all HTML — not a document.
+x-evidence:
+  fetched: '2026-09-02'
+  user_agent: browser
+  hosts_probed:
+    - www.amwater.com
+    - login.amwater.com
+  hosts_unresolvable:
+    - api.amwater.com
+    - developer.amwater.com

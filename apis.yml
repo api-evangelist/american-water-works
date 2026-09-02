@@ -46,6 +46,30 @@ common:
     url: security/american-water-works-vulnerability-disclosure.yml
   - type: DomainSecurity
     url: security/american-water-works-domain-security.yml
+  - type: Security
+    url: https://www.amwater.com/.well-known/security.txt
+    name: Security contact (RFC 9116 security.txt)
+  - type: SecurityTxt
+    url: well-known/american-water-works-security.txt
+  - type: WellKnown
+    url: well-known/american-water-works-well-known.yml
+  - type: Packages
+    url: packages/american-water-works-packages.yml
+  - type: LLMsTxt
+    url: llms/american-water-works-llms.txt
+  - type: PrivacyPolicy
+    url: https://www.amwater.com/corp/privacy-policy
+  - type: TermsOfService
+    url: https://www.amwater.com/corp/terms-of-use
+  - type: Support
+    url: https://www.amwater.com/corp/contact-us
+    name: Contact Us
+  - type: Blog
+    url: https://newsroom.amwater.com/
+    name: American Water Newsroom
+  - type: Login
+    url: https://login.amwater.com/
+    name: MyWater customer sign-in
   - type: GitHubOrganization
     url: https://github.com/American-Water
   - type: LinkedIn
@@ -111,8 +135,33 @@ common:
           Advanced metering infrastructure (AMI) enabling real-time water usage monitoring,
           leak detection alerts, and data-driven conservation programs for customers.
 created: '2024-11-15'
-modified: '2026-04-19'
+modified: '2026-09-02'
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    American Water ships software only as end-user products — the MyWater web portal and mobile
+    app — and publishes nothing for software developers; every "Developers" page on amwater.com
+    is a land-developer water-main-extension page, and developer.amwater.com and api.amwater.com
+    do not resolve at all.
+  evidence:
+    - url: https://www.amwater.com/openapi.json
+      status: 404
+    - url: https://www.amwater.com/api-docs
+      status: 404
+    - url: https://www.amwater.com/.well-known/agent-card.json
+      status: 404
+    - url: https://api.github.com/orgs/American-Water/repos
+      status: 200
+    - url: https://www.amwater.com/.well-known/security.txt
+      status: 200
+  checked: '2026-09-02'

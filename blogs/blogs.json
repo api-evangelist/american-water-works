@@ -5,17 +5,21 @@
       "source": "https://newsroom.amwater.com/",
       "feed_url": "https://newsroom.amwater.com/press-releases?pagetemplate=rss",
       "title": "",
-      "saved": 5,
+      "saved": 0,
       "method": "discovered"
     },
     {
-      "source": "https://www.amwater.com/corp/contact-us",
-      "feed_url": "https://www.amwater.com/corp/contact-us",
+      "source": "https://newsroom.amwater.com/press-releases?pagetemplate=rss",
+      "feed_url": "https://newsroom.amwater.com/press-releases?pagetemplate=rss",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "feed"
+    },
+    {
+      "source": "https://www.amwater.com/corp/contact-us",
+      "error": "HTTPError"
     }
   ],
-  "post_count": 5,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 10,
+  "fetched": "2026-10-17T14:53:57Z"
 }

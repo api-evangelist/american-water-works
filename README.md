@@ -1,4 +1,4 @@
-# American Water Works (american-water-works)
+# American Water Works
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,53 +66,96 @@
 
 American Water Works Company is the largest publicly traded U.S. water and wastewater utility company, providing drinking water, wastewater, and other related services to approximately 14 million people in more than 1,700 communities across 14 states. The company operates through regulated utility subsidiaries and offers customer self-service through its MyWater online portal and mobile app.
 
-**URL:** [https://www.amwater.com](https://www.amwater.com)
+**Areas:** Water Utility · Wastewater · Public Utility · Infrastructure · Environmental Services · Water Management · Fortune 1000
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## American Water Works on APIs.io
 
-## Tags:
+Everything profiled for American Water Works is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/american-water-works/](https://apis.io/providers/american-water-works/)** — or go straight to one of the APIs or properties below.
 
- - Water Utility, Wastewater, Public Utility, Infrastructure, Environmental Services, Water Management
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2024-11-15
-- **Modified:** 2026-04-19
+#### Security (2)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [American Water Works Domain Security](https://apis.io/security/american-water-works/american-water-works-domain-security/)
+- [American Water Works Vulnerability Disclosure](https://apis.io/security/american-water-works/american-water-works-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [American Water Works Plans Pricing](https://apis.io/plans/american-water-works/american-water-works-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [American Water Works Rate Limits](https://apis.io/rate-limits/american-water-works/american-water-works-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.amwater.com)
-- [MyWater Customer Portal](https://www.amwater.com/mywater)
+- [Support](https://www.amwater.com/corp/contact-us)
+- [Blog](https://newsroom.amwater.com/)
+- [Security](https://www.amwater.com/.well-known/security.txt)
+- [Terms of service](https://www.amwater.com/corp/terms-of-use)
+- [Privacy policy](https://www.amwater.com/corp/privacy-policy)
+- [GitHub](https://github.com/American-Water)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Drinking Water Service | Safe, reliable drinking water service to approximately 14 million people in 1,700+ communities across 14 states. |
-| Wastewater Treatment | Wastewater collection, treatment, and disposal services for municipalities and communities under long-term service contracts and regulated utility operations. |
-| MyWater Customer Portal | Online customer self-service portal for bill payment, account management, usage monitoring, service start/stop, and alert enrollment. |
-| Water Infrastructure Management | Operation and maintenance of water treatment plants, distribution systems, storage tanks, and pumping stations across 14 states. |
-| Community Water Solutions | Partnering with municipalities and communities to take over operation of their water and wastewater systems, providing expertise and capital investment. |
-| Military Base Water Services | Operating water and wastewater systems on U.S. military installations through 50-year privatization contracts. |
+**Kin Score 15.2** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 27.6 |
 
-| Name | Description |
-|------|-------------|
-| Residential Water Service | Providing reliable, safe, and affordable drinking water and wastewater service to homes and apartments across American Water's service territory. |
-| Municipal System Acquisition | Acquiring or taking over operations of financially stressed or aging municipal water systems to provide professional management and capital investment. |
-| Military Installation Water Privatization | Managing drinking water and wastewater systems on military bases under long-term privatization agreements with the U.S. Department of Defense. |
-| Industrial Water Supply | Providing industrial-grade water supply and wastewater treatment services to manufacturing, food processing, and commercial facilities. |
+**Agent readiness 2.5** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Green Button Water Data | Participation in open data initiatives enabling customers to download and share their water usage data with authorized third-party conservation and analytics applications. |
-| Smart Meter Infrastructure | Advanced metering infrastructure (AMI) enabling real-time water usage monitoring, leak detection alerts, and data-driven conservation programs for customers. |
+**Regulatory alignment 16.4** — Energy & Utilities
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/american-water-works/](https://apis.io/providers/american-water-works/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** info@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for American Water Works: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/american-water-works/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
